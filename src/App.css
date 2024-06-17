@@ -1,38 +1,116 @@
 .App {
   text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #333;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-form {
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-form input {
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+}
+
+.search-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.recipe-list-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.recipe-list {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  max-width: 900px;
 }
 
-.App-link {
-  color: #61dafb;
+.recipe-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  width: 280px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.2s;
+  text-decoration: none;
+  color: inherit;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pagination button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.recipe-detail {
+  margin-top: 20px;
+  text-align: left;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-detail h2 {
+  margin-top: 0;
+}
+
+.recipe-detail img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.recipe-detail ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recipe-detail ul li {
+  background-color: #f1f1f1;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.recipe-detail p {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 4px;
 }

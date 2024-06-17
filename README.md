@@ -56,6 +56,7 @@
 
 <p><u>Deployment</u></p>
 
-The app is deployed on Netlify. You can view the live version here: <a href="https://react-javascript-recipe-search.netlify.app" taget="_blank">https://react-javascript-recipe-search.netlify.app</a>
+The app is deployed on Netlify. You can view the live version here: <a href="https://react-javascript-recipe-search.netlify.app" target="_blank" rel="noopener noreferrer">https://react-javascript-recipe-search.netlify.app</a>
 </h3>
+<p>
 <p>

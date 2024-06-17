@@ -1,10 +1,10 @@
 <h1>REACT-JavaScript-Recipe-Search-App</h1>
 
-<h2>Overview</h2>
+<h2><u>Overview</u></h2>
 
 <h3>The REACT-JavaScript-Recipe-Search-App is a web application that allows users to search for recipes based on ingredients. Built with React and JavaScript, the app fetches data from TheMealDB API to display a wide range of meal options. This app demonstrates proficiency in modern web development techniques, including React components, state management, and API integration.
 
-<p><u>Features</u></p>
+<h2><u>Features</u></h2>
 
 <ul>
 <li>Ingredient-Based Search: Users can search for recipes by entering an ingredient.</li>
@@ -14,7 +14,7 @@
 <li>Error Handling: Displays messages when no recipes are found for a given ingredient.</li>
 </ul>
 
-<p><u>Benefits</u></p>
+<h2><u>Benefits</u></h2>
 
 <ul>
 <li>User-Friendly Interface: Simple and intuitive design for easy navigation.</li>
@@ -23,7 +23,7 @@
 <li>Extensible: Codebase designed to be easily extendable with new features and functionalities.</li>
 </ul>
 
-<p><u>Tech Stack</u></p>
+<h2><u>Tech Stack</u></h2>
 
 <ul>
 <li>React: Library for building user interfaces.</li>
@@ -33,7 +33,7 @@
 <li>CSS: Custom styles for the app.</li>
 </ul>
 
-<p><u>Code Structure</u></p>
+<h2><u>Code Structure</u></h2>
 
 <ul>
 <li>App.js: Main component that holds the state and routes for the application.</li>
@@ -44,7 +44,7 @@
 <li>styles/RecipeDetail.css: CSS for styling the recipe details.</li>
 </ul>
 
-<p><u>Skills Demonstrated</u></p>
+<h2><u>Skills Demonstrated</u></h2>
 
 <ul>
 <li>React Development: Efficient use of React components, hooks, and state management.</li>
@@ -54,9 +54,9 @@
 <li>Version Control: Using Git for version control and GitHub for code hosting and collaboration.</li>
 </ul>
 
-<p><u>Deployment</u></p>
+<h2><u>Deployment</u></h2>
 
-The app is deployed on Netlify. You can view the live version here: <a href="https://react-javascript-recipe-search.netlify.app" target="_blank" rel="noopener noreferrer">https://react-javascript-recipe-search.netlify.app</a>
+The app is deployed on Netlify. You can view the live version here: <a href="https://react-javascript-recipe-search.netlify.app" target="_blank">https://react-javascript-recipe-search.netlify.app</a>
 </h3>
 <p>
 <p>

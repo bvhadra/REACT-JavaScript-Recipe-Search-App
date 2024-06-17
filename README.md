@@ -2,10 +2,10 @@
 
 <h2>Overview</h2>
 
-<h4>The REACT-JavaScript-Recipe-Search-App is a web application that allows users to search for recipes based on ingredients. Built with React and JavaScript, the app fetches data from TheMealDB API to display a wide range of meal options. This app demonstrates proficiency in modern web development techniques, including React components, state management, and API integration.</h4>
+<h3>The REACT-JavaScript-Recipe-Search-App is a web application that allows users to search for recipes based on ingredients. Built with React and JavaScript, the app fetches data from TheMealDB API to display a wide range of meal options. This app demonstrates proficiency in modern web development techniques, including React components, state management, and API integration.
 
-<h3>Features</h3>
-<h4>
+Features:
+
 <ul>
 <li>Ingredient-Based Search: Users can search for recipes by entering an ingredient.</li>
 <li>Paginated Results: Results are displayed with pagination, making navigation through numerous recipes easier.</li>
@@ -13,7 +13,7 @@
 <li>Responsive Design: The app is designed to be fully responsive, ensuring a seamless experience across devices.</li>
 <li>Error Handling: Displays messages when no recipes are found for a given ingredient.</li>
 </ul>
-</h4>
+
 
 Benefits
 
@@ -50,3 +50,4 @@ Version Control: Using Git for version control and GitHub for code hosting and c
 Deployment
 
 The app is deployed on Netlify. You can view the live version here: https://react-javascript-recipe-search.netlify.app
+</h3>

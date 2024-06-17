@@ -4,6 +4,7 @@
 
 <h3>The REACT-JavaScript-Recipe-Search-App is a web application that allows users to search for recipes based on ingredients. Built with React and JavaScript, the app fetches data from TheMealDB API to display a wide range of meal options. This app demonstrates proficiency in modern web development techniques, including React components, state management, and API integration.
 
+
 Features:
 
 <ul>

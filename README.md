@@ -54,9 +54,13 @@
 <li>Version Control: Using Git for version control and GitHub for code hosting and collaboration.</li>
 </ul>
 
+<h3>By working on the Recipe Finder App, I have demonstrated proficiency in React, efficient API integration, responsive web design, and user-centric design. This project showcases my ability to create a dynamic, interactive application that effectively fetches and displays data from multiple APIs. It highlights my technical capabilities, attention to performance optimization, and commitment to delivering high-quality, user-friendly experiences.</h3>
+
 <h2><u>Deployment</u></h2>
 
-<h3>The app is deployed on Netlify. You can view the live version here: <a href="https://react-javascript-recipe-search.netlify.app" target="_blank">https://react-javascript-recipe-search.netlify.app</a></h3>
+<h3>The app is deployed on Netlify. You can view the live version here:</h3>
+<span align="center"><h2><a href="https://react-javascript-recipe-search.netlify.app" target="_blank">https://react-javascript-recipe-search.netlify.app</a></h2></span>
+
 </h3>
 <p>
 <p>

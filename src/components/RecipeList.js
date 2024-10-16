@@ -28,14 +28,15 @@ const RecipeList = ({ recipes, page, setPage, totalResults, searched }) => {
 
   return (
     <div className="recipe-list-container">
-      <h1>Search Results</h1>
+      <h2>Search Results</h2>
       {totalResults > 0 ? (
         <>
+        <h4>Select a recipe below:</h4>
           <div className="recipe-list">
             {recipes.map((recipe) => (
               <Link key={recipe.idMeal} to={`/recipe/${recipe.idMeal}`} className="recipe-card">
                 <img src={recipe.strMealThumb} alt={recipe.strMeal} />
-                <h3>{recipe.strMeal}</h3>
+                <h4>{recipe.strMeal}</h4>
               </Link>
             ))}
           </div>

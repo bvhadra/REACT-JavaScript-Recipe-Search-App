@@ -21,8 +21,8 @@ const RecipeDetail = () => {
   return (
     <div className="recipe-detail-container">
       <div className="recipe-detail">
-        <h1>Recipe Details</h1>
-        <h2>{recipe.strMeal}</h2>
+        <h2>Recipe Details</h2>
+        <h3>{recipe.strMeal}</h3>
         <img src={recipe.strMealThumb} alt={recipe.strMeal} />
         <h3>Ingredients</h3>
         <ul>
@@ -36,7 +36,7 @@ const RecipeDetail = () => {
               <li key={index}>
                 {item.ingredient} - {item.measure}
               </li>
-            ))}
+            ))}           
         </ul>
         <h3>Instructions</h3>
         <p>{recipe.strInstructions}</p>

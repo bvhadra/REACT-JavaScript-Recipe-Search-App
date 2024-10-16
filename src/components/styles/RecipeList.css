@@ -1,27 +1,85 @@
 .recipe-list-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  background-color: #dfe0df;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
+.recipe-list-container h2 {
+  font-size: 1.8em;
+  margin-bottom: 8px;
+  text-align: left;
+  letter-spacing: 0.3px;
+  color: #005247;
+}
+
+.recipe-list-container h3 {
+  font-size: 1.6em;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-align: left;
+  letter-spacing: 0.3px;
+  color: #005247;
+}
+
+.recipe-list-container h4 {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: left;
+  letter-spacing: 0.3px;
+  color: #005247;
+}
+
+.recipe-list-container p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  text-align: left;
+  letter-spacing: 0.4px;
+  color: #005247;
+}
+
+/* Main recipe list grid */
 .recipe-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 20px;
+  justify-content: flex-start; /* Cards align to the left on the last row */
+}
+
+.recipe-list h4{
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: 0.3px;
+  color: #005247
 }
 
 .recipe-card {
-  width: calc(33.33% - 20px); /* Adjust width to fit 3 cards per row */
+  flex: 0 1 calc(33.333% - 20px); /* Fixed width, with gap between cards */
   margin-bottom: 20px;
   text-align: center;
   text-decoration: none;
   color: inherit;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-sizing: border-box; /* Ensures consistent sizing with padding */
 }
 
 .recipe-card img {
-  width: 100%;
+  width: 90%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 8px;
+  border: 2px solid #d97904;
 }
 
 .recipe-card h3 {
@@ -29,6 +87,12 @@
   font-size: 1.1em;
 }
 
+.recipe-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Pagination styling */
 .pagination {
   margin-top: 20px;
   display: flex;
@@ -36,30 +100,18 @@
 }
 
 .pagination button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  margin: 5px;
-  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
   cursor: pointer;
+  background-color: #005247;
+  border: none;
+  color: white;
+  border-radius: 10px;
   transition: background-color 0.3s ease;
+  letter-spacing: 0.7px;
 }
 
 .pagination button:hover {
-  background-color: #0056b3;
-}
-
-.pagination button:disabled {
-  background-color: #cccccc;
-  cursor: not-allowed;
-}
-
-.pagination button:disabled:hover {
-  background-color: #cccccc;
-}
-
-.pagination button:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+  background-color: #408477;
 }

@@ -1,17 +1,45 @@
 .search-form {
-    margin-bottom: 20px;
-  }
-  
-  .search-form input {
-    padding: 10px;
-    width: 300px;
-    font-size: 16px;
-  }
-  
-  .search-form button {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin-left: 10px;
-    cursor: pointer;
-  }
-  
+  margin-bottom: 20px;
+}
+
+.search-form input {
+  padding: 10px;
+  width: 300px;
+  font-size: 20px;
+  font-weight: 500;
+  border: 2px solid #005247;
+  border-radius: 10px;
+  color: #005247;
+}
+
+.search-form input::placeholder {
+  color: #222222; /* This will change the placeholder text color to black (#333333) */
+  opacity: 0.8; /* Ensures full opacity, you can adjust this if needed */
+}
+
+/*
+.search-form input placeholder {
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+  border: 2px solid #005247;
+  border-radius: 10px;
+}
+  */
+
+.search-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: #005247;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  letter-spacing: 0.7px;
+}
+
+.search-form button:hover {
+  background-color: #408477;
+}

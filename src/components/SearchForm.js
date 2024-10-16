@@ -15,7 +15,7 @@ const SearchForm = ({ onSearch }) => {
         type="text" 
         value={input} 
         onChange={(e) => setInput(e.target.value)} 
-        placeholder="Enter ingredient..." 
+        placeholder="Enter ingredient... Eg. Cheese" 
       />
       <button type="submit">Search</button>
     </form>

@@ -88,8 +88,8 @@ const App = () => {
         </div>
 
         <footer className="app-footer">
-          <p>Developed by Bidhan Vhadra</p>
-          <p>&copy; 2024 Recipe Finder. All rights reserved.</p>
+          <p>Developed by <a href="https://github.com/bvhadra">Bidhan Vhadra</a></p>
+          <p>&copy; 2024 <a href="https://github.com/bvhadra/REACT-JavaScript-Recipe-Search-App">Recipe Finder</a>. All rights reserved.</p>
         </footer>
       </div>
     </Router>

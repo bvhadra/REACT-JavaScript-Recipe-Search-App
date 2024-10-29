@@ -169,6 +169,10 @@ body {
   letter-spacing: 0.4px;
 }
 
+.app-footer a {
+  color: white;
+}
+
 /* Sub-Footer Styles */
 .sub-footer {
   width: 100%;

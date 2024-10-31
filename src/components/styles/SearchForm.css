@@ -1,5 +1,8 @@
 .search-form {
   margin-bottom: 20px;
+  background-color: #d97904;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .search-form input {
@@ -9,12 +12,13 @@
   font-weight: 500;
   border: 2px solid #005247;
   border-radius: 10px;
-  color: #005247;
+  color: #d97904;
 }
 
 .search-form input::placeholder {
-  color: #222222; /* This will change the placeholder text color to black (#333333) */
-  opacity: 0.8; /* Ensures full opacity, you can adjust this if needed */
+  color: #d97904; /* This will change the placeholder text color to black (#333333) */
+  font-weight: 500;
+  opacity: 1.0; /* Ensures full opacity, you can adjust this if needed */
 }
 
 /*

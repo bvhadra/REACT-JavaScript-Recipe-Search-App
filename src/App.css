@@ -118,7 +118,7 @@ body {
   height: auto;
   display: block; /* Ensures block-level behavior */
   margin: 0 auto; /* Centers the image horizontally */
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }

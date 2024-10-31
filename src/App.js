@@ -42,8 +42,7 @@ const App = () => {
         </header>
         <div className="content">
           <aside className="sidebar">
-            <h3>Explore Popular Recipes</h3>
-                        
+                                    
             <div className="sidebar-images">
               <img src="https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg" alt="Food 2" />
               <img src="https://www.themealdb.com/images/media/meals/1548772327.jpg" alt="Food 3" />

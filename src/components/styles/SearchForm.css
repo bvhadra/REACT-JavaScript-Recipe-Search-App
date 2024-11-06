@@ -1,6 +1,6 @@
 .search-form {
   margin-bottom: 20px;
-  background-color: #d97904;
+  background-color: #FF4500;
   padding: 20px;
   border-radius: 10px;
 }
@@ -12,11 +12,11 @@
   font-weight: 500;
   border: 2px solid #005247;
   border-radius: 10px;
-  color: #d97904;
+  color: #FF4500;
 }
 
 .search-form input::placeholder {
-  color: #d97904; /* This will change the placeholder text color to black (#333333) */
+  color: #FF4500; /* This will change the placeholder text color to black (#333333) */
   font-weight: 500;
   opacity: 1.0; /* Ensures full opacity, you can adjust this if needed */
 }
@@ -46,4 +46,35 @@
 
 .search-form button:hover {
   background-color: #408477;
+}
+
+
+@media (max-width: 768px) {
+  .search-form input {
+    width: 250px;
+    font-size: 18px;
+  }
+  
+  .search-form button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .search-form input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .search-form button {
+    width: 100%;
+    margin-left: 0;
+  }
 }

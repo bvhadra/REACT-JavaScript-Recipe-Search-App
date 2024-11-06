@@ -69,7 +69,7 @@ color: #005247;
   width: 100%;
   height: auto;
   border-radius: 8px;
-  border: 2px solid #d97904;
+  border: 2px solid #FF4500;
 }
 
 .recipe-detail ul {
@@ -128,3 +128,38 @@ color: #005247;
   background-color: #408477;
 }
 
+@media (max-width: 768px) {
+  .recipe-detail {
+    padding: 15px;
+  }
+  
+  .recipe-detail h2 {
+    font-size: 1.6em;
+  }
+  
+  .recipe-detail h3 {
+    font-size: 1.4em;
+  }
+  
+  .recipe-detail h4,
+  .recipe-detail p,
+  .recipe-detail ul {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .recipe-detail h2 {
+    font-size: 1.4em;
+  }
+  
+  .recipe-detail h3 {
+    font-size: 1.2em;
+  }
+  
+  .recipe-detail h4,
+  .recipe-detail p,
+  .recipe-detail ul {
+    font-size: 1em;
+  }
+}

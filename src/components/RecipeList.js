@@ -18,6 +18,7 @@ const RecipeList = ({ recipes, page, setPage, totalResults, searched }) => {
           key={i}
           onClick={() => setPage(i)}
           disabled={i === page}
+          className={i === page ? 'current-page' : ''}
         >
           {i}
         </button>
@@ -26,12 +27,24 @@ const RecipeList = ({ recipes, page, setPage, totalResults, searched }) => {
     return pages;
   };
 
+  const renderResultsSummary = () => {
+    if (totalResults > 0) {
+      return (
+        <p className="results-summary">
+          {totalResults} recipe{totalResults !== 1 ? 's' : ''} found, {totalPages} Page{totalPages !== 1 ? 's' : ''}: Page {page} of results
+        </p>
+      );
+    }
+    return null;
+  };
+
   return (
     <div className="recipe-list-container">
       <h2>Search Results</h2>
+      {renderResultsSummary()}
       {totalResults > 0 ? (
         <>
-        <h4>Select a recipe below:</h4>
+          <h4>Select a recipe below:</h4>
           <div className="recipe-list">
             {recipes.map((recipe) => (
               <Link key={recipe.idMeal} to={`/recipe/${recipe.idMeal}`} className="recipe-card">

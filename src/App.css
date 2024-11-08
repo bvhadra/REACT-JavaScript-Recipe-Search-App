@@ -18,25 +18,28 @@ body {
   color: white;
   padding: 20px;
   border-bottom: 5px solid #dfe0df;
+  position: relative;
 }
 
 .header-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .app-logo {
-  width: 15%;
-  min-width: 100px;
-  max-width: 150px;
+  width: 150px;
   height: auto;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 3%;
 }
 
 .header-text {
-  width: 80%;
   text-align: center;
 }
 
@@ -69,6 +72,9 @@ body {
 .content {
   display: flex;
   flex-grow: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 /* Sidebar Styles */
@@ -158,7 +164,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 20px;
-  height: 100px;
+  height: auto;
   overflow-x: auto;
 }
 
@@ -207,20 +213,8 @@ body {
 
 /* Responsive styles */
 @media (max-width: 1024px) {
-  .app-logo {
-    width: 18%;
-  }
-
-  .header-text {
-    width: 78%;
-  }
-
-  .app-header h1 {
-    font-size: 2.2em;
-  }
-
-  .app-header h3 {
-    font-size: 1.4em;
+  .sidebar {
+    width: 250px;
   }
 }
 
@@ -230,12 +224,12 @@ body {
   }
 
   .app-logo {
-    width: 20%;
-    min-width: 80px;
+    width: 100px;
+    margin-left: 0;
   }
 
   .header-text {
-    width: 75%;
+    margin-left: 120px;
   }
 
   .app-header h1 {
@@ -244,6 +238,23 @@ body {
 
   .app-header h3 {
     font-size: 1.2em;
+  }
+
+  .sidebar {
+    width: 200px;
+  }
+
+  .main-section {
+    padding: 15px;
+  }
+
+  .ingredient-images {
+    flex-wrap: wrap;
+  }
+
+  .ingredient-images img {
+    width: calc(50% - 10px);
+    margin-bottom: 10px;
   }
 }
 
@@ -254,14 +265,16 @@ body {
   }
 
   .app-logo {
+    position: static;
     width: 80%;
     max-width: 200px;
-    margin-bottom: 15px;
+    margin: 0 auto 15px;
+    transform: none;
   }
 
   .header-text {
+    margin-left: 0;
     width: 100%;
-    text-align: center;
   }
 
   .app-header h1 {
@@ -279,6 +292,7 @@ body {
   .main-section {
     order: 1;
     width: 100%;
+    padding: 10px;
   }
 
   .sidebar {
@@ -291,4 +305,40 @@ body {
   .sidebar-images img {
     width: 90%;
   }
+
+  .ingredient-images {
+    flex-direction: column;
+  }
+
+  .ingredient-images img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .search-form input {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+  }
+
+  .search-form button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .recipe-card {
+    flex: 0 1 100%;
+  }
+}
+
+/* Ensure consistent width across header, main content, and footer */
+.app-header,
+.content,
+.main-section,
+.app-footer,
+.sub-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }

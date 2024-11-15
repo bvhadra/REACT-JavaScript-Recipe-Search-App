@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SearchForm from './components/SearchForm';
 import RecipeList from './components/RecipeList';
 import RecipeDetail from './components/RecipeDetail';
-import image1 from './components/images/fruitandveg1a.jpg';
-import image2 from './components/images/fruitandveg1b.jpg';
+//import image1 from './components/images/fruitandveg1a.jpg';
+//import image2 from './components/images/fruitandveg1b.jpg';
 import image3 from './components/images/fruitandveg2.jpg';
 import logo from './components/images/Recipe_Finder_App_Logo.png';
 import './App.css';
@@ -47,18 +47,9 @@ const App = () => {
           </div>
         </header>
         <div className="content">
-          <aside className="sidebar">
-                                    
-            <div className="sidebar-images">
-              <img src="https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg" alt="Food 2" />
-              <img src="https://www.themealdb.com/images/media/meals/1548772327.jpg" alt="Food 3" />
-              <img src="https://www.themealdb.com/images/media/meals/wvpsxx1468256321.jpg" alt="Food 3" />           
-              <img src="https://www.themealdb.com/images/media/meals/uuuspp1511297945.jpg" alt="Food 3" />
-              <img src="https://www.themealdb.com/images/media/meals/wrpwuu1511786491.jpg" alt="Food 3" />
-              <img src="https://www.themealdb.com/images/media/meals/vvstvq1487342592.jpg" alt="Food 3" />
-              <img src="https://www.themealdb.com/images/media/meals/uuuspp1468263334.jpg" alt="Food 3" />
-            </div>            
-          </aside>
+        
+ 
+
           <main className="main-section">
             <Routes>
               <Route
@@ -66,11 +57,8 @@ const App = () => {
                 element={
                   <>
                     {/* Key Ingredients Section */}
-                    <div className="ingredient-images">
-                      <img src={image1} alt=""/>
-                      <img src={image2} alt=""/>
-                      
-                    </div>
+                    
+
 
                     <SearchForm onSearch={handleSearch} />
                     <RecipeList

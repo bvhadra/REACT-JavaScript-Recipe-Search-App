@@ -72,9 +72,6 @@ body {
 .content {
   display: flex;
   flex-grow: 1;
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
 }
 
 /* Sidebar Styles */
@@ -164,7 +161,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 20px;
-  height: auto;
+  height: 100px;
   overflow-x: auto;
 }
 
@@ -211,6 +208,36 @@ body {
   padding-bottom: 2%;
 }
 
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.pagination button {
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #005247;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #003d34;
+}
+
+.pagination button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
 /* Responsive styles */
 @media (max-width: 1024px) {
   .sidebar {
@@ -223,13 +250,22 @@ body {
     padding: 15px;
   }
 
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .app-logo {
-    width: 100px;
-    margin-left: 0;
+    position: static;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 0 15px 0;
+    transform: none;
   }
 
   .header-text {
-    margin-left: 120px;
+    width: 100%;
+    text-align: center;
   }
 
   .app-header h1 {
@@ -240,8 +276,14 @@ body {
     font-size: 1.2em;
   }
 
+  .content {
+    flex-direction: column;
+  }
+
   .sidebar {
-    width: 200px;
+    width: 100%;
+    border-right: none;
+    border-bottom: 5px solid #dfe0df;
   }
 
   .main-section {
@@ -256,25 +298,29 @@ body {
     width: calc(50% - 10px);
     margin-bottom: 10px;
   }
+
+  .pagination {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .pagination button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 480px) {
-  .header-content {
-    flex-direction: column;
-    align-items: center;
+  .app-header {
+    padding: 10px;
+  }
+
+  .search-form {
+    max-width: 100%;
   }
 
   .app-logo {
-    position: static;
-    width: 80%;
-    max-width: 200px;
-    margin: 0 auto 15px;
-    transform: none;
-  }
-
-  .header-text {
-    margin-left: 0;
-    width: 100%;
+    max-width: none;
   }
 
   .app-header h1 {
@@ -284,36 +330,18 @@ body {
   .app-header h3 {
     font-size: 1em;
   }
-
-  .content {
-    flex-direction: column;
-  }
-
-  .main-section {
-    order: 1;
-    width: 100%;
-    padding: 10px;
-  }
-
+/*
   .sidebar {
-    order: 2;
-    width: 100%;
-    border-right: none;
-    border-top: 5px solid #dfe0df;
-  }
-
-  .sidebar-images img {
-    width: 90%;
+    display: none !important; 
   }
 
   .ingredient-images {
-    flex-direction: column;
+    display: none !important; 
   }
-
-  .ingredient-images img {
+*/
+  .main-section {
     width: 100%;
-    margin-right: 0;
-    margin-bottom: 10px;
+    padding: 10px;
   }
 
   .search-form input {
@@ -324,10 +352,37 @@ body {
   .search-form button {
     width: 100%;
     margin-left: 0;
+    display: block;
   }
 
   .recipe-card {
     flex: 0 1 100%;
+  }
+
+  /* Ensure content takes full width in mobile view */
+  .content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Remove any potential margin or padding from body and html */
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .pagination {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pagination button {
+    width: 80%;
+    margin: 5px 0;
+    padding: 12px 15px;
+    font-size: 16px;
   }
 }
 
@@ -337,8 +392,7 @@ body {
 .main-section,
 .app-footer,
 .sub-footer {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 100%;
   width: 100%;
   box-sizing: border-box;
 }

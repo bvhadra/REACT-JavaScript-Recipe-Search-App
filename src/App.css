@@ -312,7 +312,8 @@ body {
 
 @media (max-width: 480px) {
   .app-header {
-    /*padding: 0px;*/
+    padding-left: 0px;
+    padding-right: 0px;
     padding-top: 5px;
     padding-bottom: 5px;
   }

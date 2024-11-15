@@ -18,7 +18,7 @@ const RecipeList = ({ recipes, page, setPage, totalResults, searched }) => {
           key={i}
           onClick={() => setPage(i)}
           disabled={i === page}
-          className={i === page ? 'current-page' : ''}
+          className={i === page ? 'active' : ''}
         >
           {i}
         </button>

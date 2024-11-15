@@ -204,8 +204,8 @@ body {
 
 .sub-footer img {
   max-width: 100%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 /* Pagination Styles */
@@ -332,7 +332,7 @@ body {
 
   .app-header h3 {
     font-size: 1.1em;
-    padding: 5px;
+    padding: 15px;
   }
 /*
   .sidebar {
@@ -387,6 +387,11 @@ body {
     margin: 5px 0;
     padding: 12px 15px;
     font-size: 16px;
+  }
+
+  .app-footer {
+   
+    padding: 15px;
   }
 }
 

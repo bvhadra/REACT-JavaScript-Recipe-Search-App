@@ -54,11 +54,13 @@ const RecipeList = ({ recipes, page, setPage, totalResults, searched }) => {
             ))}
           </div>
           <div className="pagination">
+          
             <button onClick={handleFirst} disabled={page === 1}>First</button>
             <button onClick={handlePrevious} disabled={page === 1}>Previous</button>
             {renderPagination()}
             <button onClick={handleNext} disabled={page === totalPages}>Next</button>
             <button onClick={handleLast} disabled={page === totalPages}>Last</button>
+           
           </div>
         </>
       ) : (

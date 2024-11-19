@@ -76,8 +76,9 @@ const App = () => {
           <img src={image3} alt="" /> 
         </div>
         <footer className="app-footer">
-          <p>Developed by <a href="https://github.com/bvhadra">Bidhan Vhadra</a></p>
-          <p>&copy; 2024 <a href="https://github.com/bvhadra/REACT-JavaScript-Recipe-Search-App">Recipe Finder</a></p>
+        <p><a href="https://github.com/bvhadra/REACT-JavaScript-Recipe-Search-App">Recipe Finder</a></p>      
+        <p>Designed & Developed by <a href="https://github.com/bvhadra">Bidhan Vhadra</a></p>
+        <p>Copyright &copy; {new Date().getFullYear()} Bidhan Vhadra (<a href="https://github.com/bvhadra">GitHub</a>)</p>
         </footer>
       </div>
     </Router>
